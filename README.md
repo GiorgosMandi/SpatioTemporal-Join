@@ -5,7 +5,7 @@ SpatioTemporal-Join was developed to interlink big data sets containing observat
 Regarding the data, each observation point must contain the date it was observed (as yyyy-mm-dd hh:mm:ss) and its location as coordinates. The data set of the satellite images can contain multiple fields about the images but must contain the dates when they were captured, and their coverage as WKB in hex. The developed join interlinks the observation records with all the images that contain them and were captured the same day as the observations.
 
 ### Results 
-The following gif visualises over time some observations of the north pole with satellite images that captured them. 
+The following gif visualises over time some observations of the north pole with the satellite images that captured them.  The visualization was implemented using the [Sextant](http://sextant.di.uoa.gr/) tool.
 
 <p  align="center">
 <img  src="https://github.com/GiorgosMandi/SpatioTemporal-Join/blob/master/gif/spatiotemporal-join_2.gif">
