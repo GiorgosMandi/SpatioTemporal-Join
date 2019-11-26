@@ -11,7 +11,7 @@ As it was mentioned, the program requires the STARK library. In order to include
 	sbt assembly
 ### Execution
 
-	spark-submit --master local[*] --class spatiotemporal.PolarExperiment <path_to/sptemp_join-assembly-0.1.jar>   -s1 <satellite file> -ob <observations file> -s1_out <output path for s1> -ob_out <output path for observations>
+	spark-submit --master local[*] --class spatiotemporal.experiments.Experiment <path_to/sptemp_join-assembly-0.1.jar>   -s1 <satellite file> -ob <observations file> -s1_out <output path for s1> -ob_out <output path for observations>
 
 *  **-s1 \<satellite file\>:** path to the file that contains the coverage and the timestamp of the images. Currently, only CSV files are supported.
 *  **-ob \<observations file\>:**  path to the file that contains the observations. Currently, only CSV files are supported.
