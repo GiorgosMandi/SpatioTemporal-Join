@@ -1,0 +1,8 @@
+
+.idea/
+
+project/project/target/config-classes/
+
+*.class
+
+project/target/
