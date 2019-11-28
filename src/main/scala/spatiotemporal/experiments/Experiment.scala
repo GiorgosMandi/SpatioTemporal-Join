@@ -73,7 +73,7 @@ object  Experiment {
           ob
             .filter(line => ! line.sameElements(header))
             .filter(line => line(3) != "" && line(4) != "")
-            .map(line => ObservationRecord(line(0), line(3).toDouble, line(4).toDouble, line(2).split("\\.")(0)))
+            .map(line => ObservationRecord(line(0), "-1", line(3).toDouble, line(4).toDouble, line(2).split("\\.")(0), Nil))
             .map(rec => (STObject(rec.point,  new Instant(rec.timestamp)), rec))
         }
         else {
