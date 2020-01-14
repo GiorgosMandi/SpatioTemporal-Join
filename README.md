@@ -21,6 +21,6 @@ As it was mentioned, the program requires the STARK library. Build STARK from so
 
 
 ### Results 
-The following gif visualises ice observations of the north pole over satellite images that captured them.  The visualization was implemented using the tool [Sextant](http://sextant.di.uoa.gr/) tool.<p  align="center">
+The following gif visualises ice observations of the north pole over satellite images that captured them.  The visualization was implemented using the tool [Sextant](http://sextant.di.uoa.gr/).<p  align="center">
 <img  src="https://github.com/GiorgosMandi/SpatioTemporal-Join/blob/master/gif/spatiotemporal-join_2.gif">
 
