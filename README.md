@@ -1,12 +1,12 @@
 # SpatioTemporal-Join
 
-SpatioTemporal-Join was developed to interlink big data sets containing observations points with satellite images. The join is implemented using the [STARK](https://github.com/dbis-ilm/stark) library and hence as a prerequisite, it requires it as an sbt dependency.
+SpatioTemporal-Join was developed to interlink big data sets containing observations points with satellite images. The join is implemented using [STARK](https://github.com/dbis-ilm/stark) library and hence as a prerequisite, it is required as an sbt dependency.
 
-Regarding the data, each observation point must contain the date it was observed (as yyyy-mm-dd hh:mm:ss) and its location as coordinates. The data set of the satellite images can contain multiple fields about the images but must contain the dates when they were captured, and their coverage as WKB in hex. The developed join interlinks the observation records with all the images that contain them and were captured the same day as the observations.
+Regarding the data, each observation must contain the date it was observed (as yyyy-mm-dd hh:mm:ss) and its location as coordinates. The data set of the satellite images can contain multiple fields about the images but is required to contain the dates when they were captured, and their coverage as WKB in hex. The implemented join, interlinks the observation points with all the images that contain them and that were captured the same day as the observations.
 
 
 ###  Build
-As it was mentioned, the program requires the STARK library. In order to include it, build STARK from source and then import the jar as an sbt dependency in the build.sbt. Then to build SpatioTemporal-Join run
+As it was mentioned, the program requires the STARK library. Build STARK from source and then import the jar as an sbt dependency in build.sbt. Then build SpatioTemporal-Join by running
 	
 	sbt assembly
 ### Execution
@@ -21,6 +21,6 @@ As it was mentioned, the program requires the STARK library. In order to include
 
 
 ### Results 
-The following gif visualises over time some observations of the north pole with the satellite images that captured them.  The visualization was implemented using the [Sextant](http://sextant.di.uoa.gr/) tool.<p  align="center">
+The following gif visualises ice observations of the north pole over satellite images that captured them.  The visualization was implemented using the tool [Sextant](http://sextant.di.uoa.gr/) tool.<p  align="center">
 <img  src="https://github.com/GiorgosMandi/SpatioTemporal-Join/blob/master/gif/spatiotemporal-join_2.gif">
-</p>
+
